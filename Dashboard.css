@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: #f5e6ff;
+}
+
+nav .navbar {
+    height: 100%;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 50px;
+}
+
+.navbar .logo a {
+    font-size: 40px;
+    color: #737373;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav .navbar .nav-links {
+    line-height: 65px;
+    height: 100%;
+}
+
+nav .navbar .links {
+    display: flex;
+}
+
+nav .navbar .links li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 20px;
+}
+
+nav .navbar .links li a {
+    height: 100%;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #737373;
+    font-size: 15px;
+    font-weight: 50;
+}
+
+.navbar .nav-links .sidebar-logo {
+    display: none;
+}
+
+.navbar .bx-menu {
+    display: none;
+}
+
+.section {
+    width: 100%;
+    height: 90px;
+    background-color: #D291BC;
+    padding-left: 5%;
+    padding-top: 1%;
+}
+
+.Train_detail {
+    position: relative;
+    bottom: 4px;
+    background-color: #FFDFD3;
+    float: left;
+    border: 1px solid black;
+    width: 100%;
+    height: 40%;
+}
+
+.box {
+    position: relative;
+    left: 5%;
+    top: 30px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 3px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box1 {
+    position: relative;
+    left: 5%;
+    top: 29px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 3px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box2 {
+    position: relative;
+    left: 69.1%;
+    color: black;
+    padding-left: 10px;
+    padding-top: 3px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box3 {
+    position: relative;
+    left: 5%;
+    bottom: 2px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box4 {
+    position: relative;
+    left: 240px;
+    bottom: 52px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box5 {
+    position: relative;
+    left: 400px;
+    bottom: 102px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.BN {
+    position: relative;
+    left: 90px;
+    bottom: 80px;
+    background-color: #ffb3ff;
+    border: none;
+    border-radius: 5px;
+}
+
+.Train_detail2 {
+    position: relative;
+    /* top: %; */
+    width: 100%;
+    height: 45%;
+    background-color: #FFDFD3;
+    border: 1px solid black;
+}
+
+.box6 {
+    position: relative;
+    left: 5%;
+    top: 30px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 3px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box7 {
+    position: relative;
+    left: 5%;
+    top: 29px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 3px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box8 {
+    position: relative;
+    left: 69.1%;
+    bottom: 10px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 3px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box9 {
+    position: relative;
+    left: 5%;
+    bottom: 2px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 3px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box10 {
+    position: relative;
+    left: 240px;
+    bottom: 52px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 3px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box11 {
+    position: relative;
+    left: 410px;
+    bottom: 102px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 3px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.BN1 {
+    position: relative;
+    left: 90px;
+    bottom: 85px;
+    background-color: #ffb3ff;
+    border: none;
+    border-radius: 5px;
+}
+
+.Train_detail3 {
+    position: relative;
+    top: 5px;
+    width: 100%;
+    height: 45%;
+    background-color: #FFDFD3;
+    border: 1px solid black;
+}
+
+.box12 {
+    position: relative;
+    left: 5%;
+    top: 30px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 3px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box13 {
+    position: relative;
+    left: 5%;
+    top: 29px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 3px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box14 {
+    position: relative;
+    left: 69.1%;
+    bottom: 10px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 3px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box15 {
+    position: relative;
+    left: 5%;
+    bottom: 2px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box16 {
+    position: relative;
+    left: 240px;
+    bottom: 52px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box17 {
+    position: relative;
+    left: 410px;
+    bottom: 102px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 3px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.BN2 {
+    position: relative;
+    left: 90px;
+    bottom: 85px;
+    background-color: #ffb3ff;
+    border: none;
+    border-radius: 5px;
+}
+
+.Train_detail4 {
+    position: relative;
+    top: px;
+    width: 100%;
+    height: 45%;
+    background-color: #FFDFD3;
+    border: 1px solid black;
+}
+
+.box18 {
+    position: relative;
+    left: 5%;
+    top: 30px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 3px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box19 {
+    position: relative;
+    left: 5%;
+    top: 29px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 3px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box20 {
+    position: relative;
+    left: 69.1%;
+    bottom: 10px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 3px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box21 {
+    position: relative;
+    left: 5%;
+    bottom: 2px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box22 {
+    position: relative;
+    left: 240px;
+    bottom: 52px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.box23 {
+    position: relative;
+    left: 410px;
+    bottom: 102px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 3px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.BN3 {
+    position: relative;
+    left: 90px;
+    bottom: 85px;
+    background-color: #ffb3ff;
+    border: none;
+    border-radius: 5px;
+}
+
+.searchTrains {
+    padding-left: 30px;
+    width: 1220px;
+    height: 35px;
+    position: relative;
+    left: 150px;
+}
+
+.searchButton {
+    width: 95px;
+    height: 35px;
+    position: relative;
+    left: 30px;
+}
+
+.target {
+    background-color: gray;
+    padding-top: 10px;
+}

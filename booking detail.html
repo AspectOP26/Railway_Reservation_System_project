@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking detail.css">
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ticket airline">
+            <div class="top">
+                <h1>Your Ticket is here!!!</h1>
+                <div class="big">
+                    <p class="from">RRS</p>
+                    <p class="to"><i class="fas fa-arrow-right"></i></p>
+                </div>
+                <div class="top--side">
+                    <i class="fas fa-plane"></i>
+                    <p> </p>
+                    <p> </p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="column">
+                    <div class="row row-1">
+                        <p id="pnr"><span>PNR No:</span> </p>
+                        <p class="row--right" id="gender"><span>Gender</span> </p>
+                    </div>
+                    <div class="row row-2">
+                        <!-- <p><span>From</span> </p> -->
+                        <p class="row--center" id="day"><span>Date</span></p>
+                        <p class="row--right" id="time"><span>Time</span> </p>
+                    </div>
+                    <div class="row row-3">
+                        <p id="passengername"><span>Passenger</span> </p>
+                        <p class="row--center" id="dob"><span>DOB</span></p>
+                        <p class="row--center" id="seat"><span>Seat No</span> </p>
+                    </div>
+                </div>
+                <div class="bar--code"></div>
+            </div>
+        </div>
+    </div>
+    <!-- <button class="print" onclick="generatePDF()">Download</button> -->
+    <script src="booking detail.js"></script>
+</body>
+
+</html>

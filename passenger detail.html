@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="passenger detail.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div>
+        <!---title-->
+        <div>
+            <nav>
+                <div class="navbar">
+                    <i class='bx bx-menu'></i>
+                    <div class="logo"><a href="#">Railway Reservation</a></div>
+                    <div class="nav-links">
+                        <ul class="links">
+                            <!-- <li><a href="login.html">LOGIN</a></li> -->
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">HELP</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- passenger info -->
+        <div class="container">
+            <div class="title">Passenger Detail</div>
+            <div class="content">
+                <form action="" id="passengersform">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Name</span>
+                            <input type="text" id="nav" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="text" id="mail" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Phone Number</span>
+                            <input type="number" id="Phone" onKeyPress="if(this.value.length==10) return false" placeholder="Enter your number" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Address</span>
+                            <input type="text" id="add" placeholder="Address" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Date Of Birth</span>
+                            <input type="date" id="date" name="tanggal" style="width:250px; height:40px" required>
+                        </div>
+                    </div>
+                    <div class="gender">
+                        <span class="genn">Gender</span>
+                        <select class="Gender" id="gen">
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button class="b" id="btn">Next</button>
+                    </div>
+                    <script type="module" src="passenger detail.js"></script>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

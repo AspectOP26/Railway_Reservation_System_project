@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar</title>
+    <link rel="stylesheet" href="Dashboard.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="navbar">
+                <i class='bx bx-menu'></i>
+                <div class="logo"><a href="#">Railway Reservation</a></div>
+                <div class="nav-links">
+                    <ul class="links">
+                        <li><a href="login.html">LOG OUT</a></li>
+                        <li><a href="Dashboard.html">HOME</a></li>
+                        <!-- <li><a href="#">ABOUT US</a></li> -->
+                        <li><a href="help.html">HELP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <table>
+            <tr>
+                <td style="padding-right: 10px">
+                    <input type="text" id="Search" onkeyup="myFunction()" class="searchTrains"
+                        placeholder="Please enter a search term.." title="Type in a name">
+                </td>
+            </tr>
+        </table>
+        <br>
+
+
+        <div class="target" style="background-color: #FFDFD3; height: 30%;">
+            <div class="box" id="tn" style="width: 250px; height:30px;">Maharajas Express</div>
+            <div class="box1" id="From" style="width: 350px; height:30px;"> Mumbai CSMT Railway Station
+            </div>
+            <div class="box2" id="To" style="width: 350px; height:30px;">Delhi Safdarjung Railway Station</div>
+            <div class="box3" style="width: 140px; height:50px;">8 Days Package</div>
+            <div class="box4" style="width: 140px; height:50px;">Date: 1 November</div>
+            <div class="box5" style="width: 140px; height:50px;">Timing: 2:32</div>
+            <button id="myBtn1" class="BN" type="button" style="width: 100px; height:30px">Details</button>
+        </div>
+        <div class="target" style="background-color: #FFDFD3; height: 30%;">
+            <div class="box6" style="width: 250px; height:30px;">
+                <p class="tn">Palace On Wheels</p>
+            </div>
+            <div class="box7" style="width: 350px; height:30px;">
+                <p class="fr">Delhi Safdarjung Station</p>
+            </div>
+            <div class="box8" style="width: 350px; height:30px;">
+                <p class="to">Delhi Safdarjung Station</p>
+            </div>
+            <div class="box9" style="width: 140px; height:50px;">
+                <p class="F1">10 Days Package</p>
+            </div>
+            <div class="box10" style="width: 140px; height:50px;">
+                <p class="F2">Date: 1 November</p>
+            </div>
+            <div class="box11" style="width: 140px; height:50px;">
+                <p class="tym">Timing:2:32</p>
+            </div>
+            <button id="myBtn2" class="BN1" type="button" style="width: 100px; height:30px">Details</button>
+        </div>
+        <div class="target" style="background-color: #FFDFD3; height: 30%;">
+            <div class="box12" style="width: 250px; height:30px;">Golden Chariot</div>
+            <div class="box13" style="width: 350px; height:30px;">Bangalore Yeshwantpur Railway station</div>
+            <div class="box14" style="width: 350px; height:30px;">Bangalore Yeshwantpur Railway station</div>
+            <div class="box15" style="width: 140px; height:50px;">9 Days Package</div>
+            <div class="box16" style="width: 140px; height:50px;">Date:1 November</div>
+            <div class="box17" style="width: 140px; height:50px;">Timing:2:32</div>
+            <button id="myBtn3" class="BN2" type="button" style="width: 100px; height:30px">Details</button>
+        </div>
+        <div class="target" style="background-color: #FFDFD3;">
+            <div class="box18" style="width: 250px; height:30px;">Royal Orient Train</div>
+            <div class="box19" style="width: 350px; height:30px;">Delhi Cantonment railway station</div>
+            <div class="box20" style="width: 350px; height:30px;">Delhi Cantonment railway station</div>
+            <div class="box21" style="width: 140px; height:50px;"> Days Package</div>
+            <div class="box22" style="width: 140px; height:50px;">Date:1 November</div>
+            <div class="box23" style="width: 140px; height:50px;">Timing:2:32
+            </div>
+            <button id="myBtn4" class="BN3" type="button" style="width: 100px; height:30px">Details</button>
+        </div>
+    </div>
+
+    <script>
+        // 
+        const train1 = document.getElementById("myBtn1");
+
+        train1.addEventListener("click", function (e) {
+
+            window.location.href = "train1.html";
+        });
+        // 
+        const train2 = document.getElementById("myBtn2");
+
+        train2.addEventListener("click", function (e) {
+
+            window.location.href = "train2.html";
+        });
+        // 
+        const train3 = document.getElementById("myBtn3");
+
+        train3.addEventListener("click", function (e) {
+
+            window.location.href = "train3.html";
+        });
+        // 
+        const train4 = document.getElementById("myBtn4");
+
+        train4.addEventListener("click", function (e) {
+
+            window.location.href = "train4.html";
+        });
+        // 
+        function myFunction() {
+            var input = document.getElementById("Search");
+            var filter = input.value.toLowerCase();
+            var nodes = document.getElementsByClassName('target');
+
+            for (i = 0; i < nodes.length; i++) {
+                if (nodes[i].innerText.toLowerCase().includes(filter)) {
+                    nodes[i].style.display = "block";
+                } else {
+                    nodes[i].style.display = "none";
+                }
+            }
+        }
+
+        var Day = " 1 November";
+            localStorage.setItem("Day", Day);
+        
+            var Time = "2:32 PM";
+                localStorage.setItem("Time", Time);
+    </script>
+</body>
+
+</html>

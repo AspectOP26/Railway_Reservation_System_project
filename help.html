@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Contact Form</title>
+    <link rel="stylesheet" href="help.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <form action="" id="contactform">
+          <div class="alert">Your message sent</div>
+
+    <!--contact section  start-->
+    <div class="contact-section">
+      <div class="contact-info">
+        <div><i class="fas fa-map-marker-alt"></i>Address-4/4, Kajutekadi, Ghatkopar(W), Mumbai 400084, Maharashtra <br> City-Mumbai<br>Country-India</div>
+        <div><i class="fas fa-envelope"></i>railwayquery@email.com</div>
+        <div><i class="fas fa-phone"></i>+91 9876543210</div>
+        <div><i class="fas fa-clock"></i>Monday - Sunday 8:00 AM to 10:00 PM</div>
+      </div>
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form class="contact" action="" id="contactform" method="post">
+          <input type="text" name="name" id="name" class="text-box" placeholder="Your Name" required>
+          <input type="email" name="email" id="emailid" class="text-box" placeholder="Your Email" required>
+          <textarea name="message" id="msgcontent" rows="5" placeholder="Your Message" required></textarea>
+            <div class="inputBox">
+              <button type="submit">Submit</button>
+          </div>
+      </form>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+      <script src="help.js"></script>
+  </body>
+  
+  </html>
+    
